@@ -73,9 +73,9 @@ print clf.score(Xpred)
 XR=np.zeros((100,2))
 X2=XRAW[100:200,]
 for i in range(100):
-    newx=math.floor((X2[i,2]+1.5)/0.1)
+    newx=math.floor((X2[i,2]+1.5)/0.3)
     #print newx
-    newy=math.floor((X2[i,3]+1.5)/0.1)
+    newy=math.floor((X2[i,3]+1.5)/0.3)
     #print (newy*10) +newx
     XR[i,0]=(newy*10) +newx
     obsidx=math.trunc( X2[i,1])
